@@ -1,4 +1,4 @@
-# Importing libraries
+
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -8,9 +8,7 @@ from sklearn.metrics import mean_squared_error
 from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import LinearRegression
 from sklearn.ensemble import RandomForestRegressor
-from sklearn import metrics
-
-%matplotlib inline
+from sklearn import metri
 from matplotlib import style
 style.use("seaborn")
 
@@ -32,9 +30,7 @@ warnings.filterwarnings('ignore')
 
      
 
-# from google.colab import files
-# first_data = files.upload()
-# second_data = files.upload()
+
      
 
 

@@ -31,8 +31,12 @@ plt.figure(figsize=(10, 6))
 merged_data.boxplot(column=['Calories'])
 plt.title('Box Plot of Calories Burned')
 plt.show()
-
-
+from sklearn.linear_model import LinearRegression
+from sklearn.tree import DecisionTreeRegressor
+from sklearn.ensemble import RandomForestRegressor
+import xgboost as xgb
+X_train.shape
+y_test.shape
 
 
 

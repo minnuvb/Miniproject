@@ -37,6 +37,16 @@ from sklearn.ensemble import RandomForestRegressor
 import xgboost as xgb
 X_train.shape
 y_test.shape
+from sklearn.linear_model import LinearRegression
+from sklearn.tree import DecisionTreeRegressor
+from sklearn.ensemble import RandomForestRegressor
+import xgboost as xgb
+from sklearn.metrics import mean_squared_error, r2_score
+lr_model = LinearRegression()
+dtr_model = DecisionTreeRegressor()
+rfr_model = RandomForestRegressor()
+xgb_model = xgb.XGBRegressor(objective='reg:squarederror', random_state=42)
+
 
 
 

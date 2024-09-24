@@ -66,5 +66,4 @@ xgb_model = xgb.XGBRegressor(objective='reg:squarederror', random_state=42)
 
      
 
-calories = pd.read_csv("calories.csv")
-exercise = pd.read_csv("exercise.csv")
+

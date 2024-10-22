@@ -74,8 +74,25 @@ xgb_r2 = r2_score(y_test, xgb_y_pred)
 xgb_model = xgb.XGBRegressor()
 xgb_model.fit(X_train, y_train)
 y_pred = xgb_model.predict(X_test)
+
+
 import pickle
-pickle.dump(xgb_model ,open('xgb_model .pkl','wb'))
-X_train.to_csv('X_train.csv')
+
+#  Linear  model
+with open('linear_regression_model.pkl', 'wb') as file:
+    pickle.dump(lr_model, file)
 
 
+# Decision Tree  model
+with open('decision_tree_regressor_model.pkl', 'wb') as file:
+    pickle.dump(dtr_model, file)
+
+
+#  Random Forest  model
+with open('random_forest_regressor_model.pkl', 'wb') as file:
+    pickle.dump(rfr_model, file)
+
+
+# XGBoost model 
+with open('xgb_model.pkl', 'wb') as file:
+    pickle.dump(xgb_model, file)

@@ -99,7 +99,7 @@ if options == 'Prediction':
         input_data = pd.DataFrame([[gender_num, age, height, weight, duration, heart_rate, body_temp]], 
                                   columns=["Gender", "Age", "Height", "Weight", "Duration", "Heart_Rate", "Body_Temp"])
 
-        # **Prediction button only in Prediction section**
+        # Prediction button only in Prediction section
         if st.button('**Predict**'):
             prediction = model.predict(input_data)  # Use the loaded model for prediction
             st.markdown(f'**The predicted Calories Burnt is: {prediction[0]:,.2f}**')  # Display prediction with bold

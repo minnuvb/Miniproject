@@ -57,7 +57,7 @@ def load_xgb_model():
 
 
 
-# **Sidebar for navigation**
+# Sidebar for navigation
 st.sidebar.title('**Navigation**')
 options = st.sidebar.selectbox('**Select a page:**', 
                                ['Prediction', 'Code', 'About'])
